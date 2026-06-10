@@ -1,0 +1,12 @@
+{
+  "name": "benson-jigo-jale-portfolio",
+  "version": "1.0.0",
+  "description": "Professional personal portfolio website for Benson Jigo Jale",
+  "main": "index.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"index.html, style.css, script.js\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}

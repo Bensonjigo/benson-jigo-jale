@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Benson Jigo Jale - Bachelor of Science in Information Technology Graduate, Software Developer, IT Specialist, and Technology Consultant. Check out my projects, skills, and certifications.">
+    <meta name="keywords" content="Benson Jigo Jale, IT Specialist, Software Developer, Technology Consultant, Web Developer, Kumi University, Portfolio, Tech Support">
+    <meta name="author" content="Benson Jigo Jale">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Benson Jigo Jale | IT Specialist & Software Developer">
+    <meta property="og:description" content="Portfolio website for Benson Jigo Jale. Exploring software development, systems administration, and IT networking solutions.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    
+    <title>Benson Jigo Jale | IT Specialist & Software Developer Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ==========================================================================
+         NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="header-nav" id="main-header">
+        <div class="container">
+            <a href="#hero" class="logo" id="header-logo">
+                BENSON J. JALE<span class="logo-dot"></span>
+            </a>
+            
+            <nav class="nav-menu" id="main-navigation" aria-label="Main Navigation">
+                <a href="#about" class="nav-link" id="nav-link-about">About</a>
+                <a href="#services" class="nav-link" id="nav-link-services">Services</a>
+                <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                <a href="#portfolio" class="nav-link" id="nav-link-portfolio">Portfolio</a>
+                <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+                <a href="#certifications" class="nav-link" id="nav-link-certifications">Certifications</a>
+                <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light/dark theme" title="Switch Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon-dark"></i>
+                    <i class="fa-solid fa-sun" id="theme-icon-light"></i>
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             HERO SECTION
+             ========================================================================== -->
+        <section class="hero-wrapper" id="hero">
+            <!-- Canvas Particle Network Background -->
+            <canvas id="canvas-bg"></canvas>
+            
+            <div class="container">
+                <div class="hero-content scroll-reveal">
+                    <div class="hero-avatar-wrapper">
+                        <img src="assets/benson%20Jigo.jpg" alt="Benson Jigo Jale Profile Avatar" class="hero-avatar">
+                    </div>
+                    <span class="hero-welcome">Welcome to my space</span>
+                    <h1 class="hero-title">Building Innovative Technology Solutions for a <span class="name-highlight">Digital Future</span></h1>
+                    <p class="hero-subtitle">
+                        I am a <span class="typing-text"></span>
+                    </p>
+                    <p class="hero-tagline">
+                        "Using technology to create innovative solutions that improve businesses and communities."
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary" id="hero-btn-portfolio">View My Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Hire Me</a>
+                        <a href="assets/benson_jigo_jale_cv.pdf" download="Benson_Jigo_Jale_CV.pdf" class="btn btn-tertiary" id="hero-btn-cv">
+                            <i class="fa-solid fa-download" style="margin-right: 8px;"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             ABOUT ME SECTION
+             ========================================================================== -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Left: Profile Image Frame -->
+                    <div class="about-visual scroll-reveal reveal-delay-1" id="about-visual-portrait">
+                        <div class="profile-image-frame glass-panel">
+                            <img src="assets/benson%20Jigo%20jale.jpg" alt="Benson Jigo Jale Profile Photo" class="profile-image">
+                            <div class="profile-image-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Text, Strengths & Stats -->
+                    <div class="about-info-wrapper scroll-reveal reveal-delay-2">
+                        <div class="about-bio scroll-reveal reveal-delay-1">
+                        <p class="about-lead">
+                            I am Benson Jigo Jale, a Bachelor of Science in Information Technology graduate from Kumi University.
+                        </p>
+                        <p class="about-text">
+                            I am passionate about technology, software development, IT support, systems administration, computer networking, and digital innovation. I enjoy solving real-world challenges through technology and continuously improving my technical skillset.
+                        </p>
+                        <p class="about-text">
+                            I possess solid expertise in computer networking, including LAN/WAN infrastructure setup, Cisco routing and switching configuration, network troubleshooting, cabling, and systems administration. My academic background and hands-on experience enable me to deploy sustainable network, software, and database systems that foster business efficiency and organizational growth.
+                        </p>
+                    </div>
+                        
+                        <!-- Stats / Visual Panel -->
+                        <div class="stats-grid" id="stats-grid-about">
+                            <div class="stat-card glass-panel" id="stat-card-experience">
+                                <div class="stat-num">B.Sc.</div>
+                                <div class="stat-label">IT Graduate</div>
+                            </div>
+                            <div class="stat-card glass-panel" id="stat-card-projects">
+                                <div class="stat-num">5+</div>
+                                <div class="stat-label">Featured Projects</div>
+                            </div>
+                            <div class="stat-card glass-panel" id="stat-card-clients">
+                                <div class="stat-num">100%</div>
+                                <div class="stat-label">Problem Solved</div>
+                            </div>
+                            <div class="stat-card glass-panel" id="stat-card-support">
+                                <div class="stat-num">24/7</div>
+                                <div class="stat-label">Tech Mentality</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Strengths Container -->
+                        <div class="strengths-container">
+                            <h3 class="strengths-title"><i class="fa-solid fa-star"></i> Core Strengths</h3>
+                            <div class="strengths-flex">
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Problem Solving</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Analytical Thinking</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Team Collaboration</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Technical Support</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Software Development</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Continuous Learning</span>
+                                <span class="strength-tag"><i class="fa-solid fa-check"></i> Communication Skills</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             SERVICES SECTION
+             ========================================================================== -->
+        <section class="section" id="services" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Professional Services</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1: Software Development -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-1" id="service-software-dev">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-card-title">Software Development</h3>
+                        <p class="service-card-desc">Building modern, secure, and performant applications that streamline operations and solve practical business challenges.</p>
+                    </div>
+                    
+                    <!-- Service 2: Website Development -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-2" id="service-web-dev">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="service-card-title">Website Development</h3>
+                        <p class="service-card-desc">Designing responsive, fast-loading, SEO-optimized, and user-friendly websites aligned with business goals.</p>
+                    </div>
+                    
+                    <!-- Service 3: Mobile App Development -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-3" id="service-mobile-dev">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="service-card-title">Mobile App Development</h3>
+                        <p class="service-card-desc">Developing Android and cross-platform mobile applications using modern frameworks like Flutter for seamless UI/UX.</p>
+                    </div>
+                    
+                    <!-- Service 4: IT Support -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-1" id="service-it-support">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="service-card-title">IT Support</h3>
+                        <p class="service-card-desc">Providing comprehensive system diagnostics, troubleshooting hardware/software conflicts, and remote technical assistance.</p>
+                    </div>
+                    
+                    <!-- Service 5: Network Administration -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-2" id="service-network-admin">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="service-card-title">Network Administration</h3>
+                        <p class="service-card-desc">Setting up, configuring, securing, and maintaining LAN/WAN hardware infrastructure and server networks.</p>
+                    </div>
+                    
+                    <!-- Service 6: Database Management -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-3" id="service-db-manage">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="service-card-title">Database Management</h3>
+                        <p class="service-card-desc">Designing relational structures, optimizing queries, and managing efficient database servers for data reliability.</p>
+                    </div>
+                    
+                    <!-- Service 7: Technology Consulting -->
+                    <div class="service-card glass-panel scroll-reveal reveal-delay-1" id="service-tech-consult">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3 class="service-card-title">Technology Consulting</h3>
+                        <p class="service-card-desc">Helping businesses and NGOs assess, adopt, and integrate digital technology solutions to increase operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             SKILLS SECTION
+             ========================================================================== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">My Skills & Toolbelt</h2>
+                </div>
+                
+                <!-- Skills Category Tabs -->
+                <div class="skills-tabs scroll-reveal">
+                    <button class="skills-tab-btn active" data-target="tech-skills" id="tab-btn-tech">Technical Skills</button>
+                    <button class="skills-tab-btn" data-target="programming-languages" id="tab-btn-lang">Programming Languages</button>
+                    <button class="skills-tab-btn" data-target="tools-tech" id="tab-btn-tools">Tools & Technologies</button>
+                </div>
+                
+                <!-- Tab Content 1: Technical Skills -->
+                <div class="skills-content active scroll-reveal" id="tech-skills">
+                    <div class="skill-chip glass-panel" id="skill-chip-software-dev">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <div class="skill-chip-name">Software Development</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-web-dev">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="skill-chip-name">Web Development</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-mobile-dev">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-mobile-button"></i></div>
+                        <div class="skill-chip-name">Mobile App Development</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-db-manage">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-table-list"></i></div>
+                        <div class="skill-chip-name">Database Management</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-net">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-route"></i></div>
+                        <div class="skill-chip-name">Networking</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-support">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div class="skill-chip-name">IT Support</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-sysadmin">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <div class="skill-chip-name">Systems Administration</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-cybersecurity">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="skill-chip-name">Cybersecurity Basics</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-cloud">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="skill-chip-name">Cloud Technologies</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-trouble">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-life-ring"></i></div>
+                        <div class="skill-chip-name">Troubleshooting</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-digital-transform">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="skill-chip-name">Digital Transformation</div>
+                    </div>
+                </div>
+                
+                <!-- Tab Content 2: Programming Languages -->
+                <div class="skills-content scroll-reveal" id="programming-languages">
+                    <div class="skill-chip glass-panel" id="skill-chip-python">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="skill-chip-name">Python</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-js">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-chip-name">JavaScript</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-php">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-chip-name">PHP</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-sql">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="skill-chip-name">SQL</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-html">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-html5"></i></div>
+                        <div class="skill-chip-name">HTML5</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-css">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="skill-chip-name">CSS3</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-dart">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <div class="skill-chip-name">Dart</div>
+                    </div>
+                </div>
+                
+                <!-- Tab Content 3: Tools & Technologies -->
+                <div class="skills-content scroll-reveal" id="tools-tech">
+                    <div class="skill-chip glass-panel" id="skill-chip-flutter">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-window-restore"></i></div>
+                        <div class="skill-chip-name">Flutter</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-git">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-chip-name">Git & GitHub</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-mysql">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-server"></i></div>
+                        <div class="skill-chip-name">MySQL</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-vscode">
+                        <div class="skill-chip-icon"><i class="fa-solid fa-circle-code"></i></div>
+                        <div class="skill-chip-name">VS Code</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-linux">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-linux"></i></div>
+                        <div class="skill-chip-name">Linux</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-winserver">
+                        <div class="skill-chip-icon"><i class="fa-brands fa-windows"></i></div>
+                        <div class="skill-chip-name">Windows Server</div>
+                    </div>
+                    <div class="skill-chip glass-panel" id="skill-chip-msoffice">
+                        <div class="skill-chip-icon"><i class="fa-regular fa-file-word"></i></div>
+                        <div class="skill-chip-name">Microsoft Office Suite</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             PORTFOLIO SECTION
+             ========================================================================== -->
+        <section class="section" id="portfolio" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                
+                <!-- Filter controls -->
+                <div class="portfolio-filter scroll-reveal">
+                    <button class="portfolio-filter-btn active" data-filter="all" id="filter-btn-all">All Projects</button>
+                    <button class="portfolio-filter-btn" data-filter="mobile" id="filter-btn-mobile">Mobile Apps</button>
+                    <button class="portfolio-filter-btn" data-filter="systems" id="filter-btn-systems">Systems</button>
+                    <button class="portfolio-filter-btn" data-filter="web" id="filter-btn-web">Websites</button>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1: Plant Disease Detection Mobile App -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-1" data-category="mobile" id="project-plant-disease">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-leaf"></i>
+                                <h3>Plant Disease Detection</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Flutter & TensorFlow Lite</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/Plant-Disease-Detection-App" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">Plant Disease Detection Mobile App</h3>
+                            <p class="project-desc">A mobile application developed using Flutter that helps farmers identify plant diseases using image recognition technology and TensorFlow Lite models.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">AI/ML</span>
+                                <span class="project-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2: Soil Care Pro -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-2" data-category="mobile" id="project-soil-care">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-seedling"></i>
+                                <h3>Soil Care Pro</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Flutter & IoT Soil Analysis</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/Soil-Care-Pro" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">Soil Care Pro Mobile App</h3>
+                            <p class="project-desc">A mobile application developed for real-time soil property analysis. Connects to soil testing sensors to measure pH levels, moisture content, and NPK requirements to deliver crop and fertilizer recommendations.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">IoT Integration</span>
+                                <span class="project-tag">Soil Analysis</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3: School Management System -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-3" data-category="systems" id="project-school-system">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-school"></i>
+                                <h3>School Management</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">PHP & MySQL Database</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/School-Management-System" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">School Management System</h3>
+                            <p class="project-desc">A comprehensive digital platform for managing students, course registration, fee reports, daily attendance, and academic grades efficiently.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 4: Kumi University Clinic Management Application -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-1" data-category="systems" id="project-clinic-system">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-house-medical"></i>
+                                <h3>Kumi Univ Clinic Management</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">PHP Patient & Records System</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/Kumi-Clinic-System" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">Kumi University Clinic Management Application</h3>
+                            <p class="project-desc">A customized medical records application built to manage student/staff medical registrations, daily clinic visits, laboratory test reports, and pharmaceutical inventory at Kumi University.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Database</span>
+                                <span class="project-tag">Clinic Operations</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 5: Inventory Management System -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-2" data-category="systems" id="project-inventory-system">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <h3>Inventory Management</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Python & SQLite Engine</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/Inventory-Management-System" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">Inventory Management System</h3>
+                            <p class="project-desc">An automated tracking system for businesses to record stock ins/outs, manage supplier directories, trigger low stock alerts, and generate sales reports.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">GUI Design</span>
+                                <span class="project-tag">Reporting</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 6: Business Website Projects -->
+                    <article class="portfolio-item glass-panel scroll-reveal reveal-delay-3" data-category="web" id="project-business-web">
+                        <div class="portfolio-visual">
+                            <div class="project-placeholder-visual">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h3>Business Websites</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">HTML5, CSS3 & JavaScript</p>
+                            </div>
+                            <div class="project-visual-overlay">
+                                <a href="https://github.com/BensonJale/Business-Websites" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="project-link-icon" aria-label="Live Demo" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3 class="project-title">Business Website Projects</h3>
+                            <p class="project-desc">A collection of custom-designed, fully responsive landing pages and portals for regional organizations and local businesses optimizing their online presence.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JS</span>
+                                <span class="project-tag">SEO Optimized</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE & EDUCATION SECTION
+             ========================================================================== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="timeline-section-wrapper">
+                    
+                    <!-- Experience timeline -->
+                    <div class="timeline-column scroll-reveal reveal-delay-1">
+                        <h2 class="timeline-column-title"><i class="fa-solid fa-briefcase"></i> Professional Journey</h2>
+                        
+                        <div class="timeline">
+                            <!-- Timeline Item: Freelance IT Support -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="exp-freelance">
+                                    <span class="timeline-date">2024 - Present</span>
+                                    <h3 class="timeline-title">Freelance Software Developer & IT Support</h3>
+                                    <p class="timeline-institution">Freelance Consulting</p>
+                                    <p class="timeline-desc">Assisting local businesses and clients with digital problems, computer networking setup, diagnostic support, and coding customized tools.</p>
+                                    <ul class="timeline-bullets">
+                                        <li>Built inventory systems and custom websites for regional merchants.</li>
+                                        <li>Provided desktop and network administration troubleshooting.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item: Intern -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="exp-internship">
+                                    <span class="timeline-date">2023 - 2024</span>
+                                    <h3 class="timeline-title">IT Intern / Technical Support Specialist</h3>
+                                    <p class="timeline-institution">Internships & Academic Deployments</p>
+                                    <p class="timeline-desc">Completed hands-on software development tasks, network maintenance procedures, database setup, and user support assignments.</p>
+                                    <ul class="timeline-bullets">
+                                        <li>Optimized database schemas, reducing query response lags by 15%.</li>
+                                        <li>Resolved physical hardware and software diagnostics logs for campus users.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item: Community Tech Support -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="exp-community">
+                                    <span class="timeline-date">2022 - 2023</span>
+                                    <h3 class="timeline-title">Community Technology Support Activities</h3>
+                                    <p class="timeline-institution">Social Initiatives</p>
+                                    <p class="timeline-desc">Volunteered basic computer literacy lessons and hardware repair services to local schools and community organizations.</p>
+                                    <ul class="timeline-bullets">
+                                        <li>Maintained secondary school computers to prevent malware infections.</li>
+                                        <li>Mentored junior students on the basics of HTML/CSS coding.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education timeline -->
+                    <div class="timeline-column scroll-reveal reveal-delay-2" id="education">
+                        <h2 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                        
+                        <div class="timeline">
+                            <!-- Timeline Item: Kumi University -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="edu-kumi">
+                                    <span class="timeline-date">Graduate</span>
+                                    <h3 class="timeline-title">Bachelor of Science in Information Technology</h3>
+                                    <p class="timeline-institution">Kumi University</p>
+                                    <p class="timeline-desc">Comprehensive undergraduate program covering systems analysis, network routing protocols, programming methodologies, and IT security protocols.</p>
+                                    <ul class="timeline-bullets">
+                                        <li><strong>Key Focus Areas:</strong> Software Development, Database Systems, Networking, Information Systems, Systems Analysis and Design, Cybersecurity Fundamentals, IT Project Management.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item: Metu Secondary School -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="edu-metu">
+                                    <span class="timeline-date">UACE Level</span>
+                                    <h3 class="timeline-title">Uganda Advanced Certificate of Education (UACE)</h3>
+                                    <p class="timeline-institution">Metu Secondary School</p>
+                                    <p class="timeline-desc">Focused on advanced sciences and analytic foundations.</p>
+                                    <ul class="timeline-bullets">
+                                        <li><strong>Combination:</strong> Physics, Chemistry, Mathematics (PCM).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item: Ebenezer Baptist Secondary School -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-panel" id="edu-ebenezer">
+                                    <span class="timeline-date">UCE Level</span>
+                                    <h3 class="timeline-title">Uganda Certificate of Education (UCE)</h3>
+                                    <p class="timeline-institution">Ebenezer Baptist Secondary School</p>
+                                    <p class="timeline-desc">Successfully completed Ordinary Level studies, building a robust academic background in mathematics, general sciences, and introductory technology concepts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CERTIFICATIONS SECTION
+             ========================================================================== -->
+        <section class="section" id="certifications" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certifications & Badges</h2>
+                </div>
+                
+                <div class="certifications-grid">
+                    <!-- Cert 1: Networking -->
+                    <div class="cert-card glass-panel scroll-reveal reveal-delay-1" id="cert-networking">
+                        <div class="cert-badge-wrapper">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3 class="cert-title">Networking Certifications</h3>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                    
+                    <!-- Cert 2: Cybersecurity -->
+                    <div class="cert-card glass-panel scroll-reveal reveal-delay-2" id="cert-cyber">
+                        <div class="cert-badge-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="cert-title">Cybersecurity Certifications</h3>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                    
+                    <!-- Cert 3: Cloud Computing -->
+                    <div class="cert-card glass-panel scroll-reveal reveal-delay-3" id="cert-cloud">
+                        <div class="cert-badge-wrapper">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3 class="cert-title">Cloud Computing Certifications</h3>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                    
+                    <!-- Cert 4: Software Development -->
+                    <div class="cert-card glass-panel scroll-reveal reveal-delay-1" id="cert-software">
+                        <div class="cert-badge-wrapper">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3 class="cert-title">Software Development Certifications</h3>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             TESTIMONIALS SECTION
+             ========================================================================== -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Endorsements</span>
+                    <h2 class="section-title">Client & Employer Feedback</h2>
+                </div>
+                
+                <div class="testimonials-slider-container glass-panel scroll-reveal">
+                    <div class="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">"Benson showed incredible skill while helping configure our local inventory platform. His understanding of relational databases and software flow made a huge difference."</p>
+                            <div class="testimonial-author-avatar">J</div>
+                            <div class="testimonial-author-info">
+                                <h4>John Okello</h4>
+                                <p>Retail Business Owner, Kumi District</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">"As an IT intern, Benson was highly proactive, diagnosing hardware malfunctions and helping users resolve complex network connection issues quickly. Very dependable."</p>
+                            <div class="testimonial-author-avatar">S</div>
+                            <div class="testimonial-author-info">
+                                <h4>Sarah Namubiru</h4>
+                                <p>IT Department Lead, Academic System</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">"Benson's contribution to computer support in local secondary schools was highly impressive. He organized networks, removed system malware, and inspired many kids to code."</p>
+                            <div class="testimonial-author-avatar">P</div>
+                            <div class="testimonial-author-info">
+                                <h4>Peter Logose</h4>
+                                <p>Community Liaison Executive, NGO</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Navigation dots -->
+                    <div class="slider-controls">
+                        <button class="slider-dot active" aria-label="Go to slide 1"></button>
+                        <button class="slider-dot" aria-label="Go to slide 2"></button>
+                        <button class="slider-dot" aria-label="Go to slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CONTACT SECTION
+             ========================================================================== -->
+        <section class="section" id="contact" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Left: Contact Information Details -->
+                    <div class="contact-info scroll-reveal reveal-delay-1">
+                        <p class="contact-lead">
+                            Interested in working together or discussing a project? Feel free to get in touch. Benson Jigo Jale is open to software development projects, systems installation jobs, networking contracts, and permanent roles.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-method-card glass-panel" id="method-email">
+                                <div class="contact-method-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <h5>Email Address</h5>
+                                    <p><a href="mailto:bensonjalejigo@gmail.com">bensonjalejigo@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="contact-method-card glass-panel" id="method-phone">
+                                <div class="contact-method-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <h5>Phone Numbers</h5>
+                                    <p style="margin-bottom: 5px;"><a href="tel:+256783689933">+256 783 689933</a></p>
+                                    <p><a href="tel:+256779734423">+256 779 734423</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Profiles and Chat links -->
+                        <div class="contact-socials-wrapper">
+                            <h3 class="contact-socials-title">Connect on Networks</h3>
+                            <div class="contact-socials">
+                                <!-- WhatsApp button -->
+                                <a href="https://wa.me/256783689933?text=Hello%20Benson,%20I%20am%20interested%20in%20your%20IT%20services" target="_blank" rel="noopener" class="social-circle-link whatsapp" aria-label="Chat on WhatsApp" title="WhatsApp Chat">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <!-- LinkedIn Profile -->
+                                <a href="https://linkedin.com/in/benson-jigo-jale" target="_blank" rel="noopener" class="social-circle-link linkedin" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <!-- GitHub Profile -->
+                                <a href="https://github.com/BensonJale" target="_blank" rel="noopener" class="social-circle-link github" aria-label="GitHub Profile" title="GitHub Profile">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <!-- Direct Email -->
+                                <a href="mailto:bensonjalejigo@gmail.com" class="social-circle-link email-social" aria-label="Send Direct Email" title="Send Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Interactive Contact Form -->
+                    <form class="contact-form glass-panel scroll-reveal reveal-delay-2" id="portfolio-contact-form">
+                        <!-- Submission state banner feedback -->
+                        <div class="form-status-message" id="form-status" role="alert"></div>
+                        
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="yourname@domain.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-subject" class="form-label">Subject</label>
+                            <input type="text" id="form-subject" class="form-control" placeholder="How can I help you?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Your Message</label>
+                            <textarea id="form-message" class="form-control" placeholder="Detail your project or requirements here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn" style="align-self: flex-start;">
+                            Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         FOOTER SECTION
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#hero" class="logo" style="font-size: 1.25rem;">
+                        BENSON J. JALE<span class="logo-dot"></span>
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#portfolio" class="footer-link">Portfolio</a>
+                    <a href="#experience" class="footer-link">Journey</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Benson Jigo Jale. All rights reserved.</p>
+                <p>Designed for premium quality performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top floating button -->
+    <button class="back-to-top" id="scroll-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top" title="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
