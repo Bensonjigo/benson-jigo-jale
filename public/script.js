@@ -83,18 +83,29 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.removeAttribute('data-theme');
     }
 
+    const updateThemeColor = (theme) => {
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+            meta.content = theme === 'light' ? '#f8fafc' : '#070b14';
+        }
+    };
+
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
             const isLight = document.documentElement.getAttribute('data-theme') === 'light';
             if (isLight) {
                 document.documentElement.removeAttribute('data-theme');
                 localStorage.setItem('theme', 'dark');
+                updateThemeColor('dark');
             } else {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
+                updateThemeColor('light');
             }
         });
     }
+
+    updateThemeColor(currentTheme);
 
     // -------------------------------------------------------------
     // 4. TYPEWRITER EFFECT IN HERO
@@ -215,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             draw() {
                 // Particle color based on theme
                 const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-                ctx.fillStyle = isLight ? 'rgba(37, 99, 235, 0.4)' : 'rgba(6, 182, 212, 0.5)';
+                ctx.fillStyle = isLight ? 'rgba(99, 102, 241, 0.35)' : 'rgba(129, 140, 248, 0.45)';
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fill();
@@ -238,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const drawLines = () => {
             const maxDistance = 120;
             const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-            const lineColor = isLight ? '37, 99, 235' : '6, 182, 212';
+            const lineColor = isLight ? '99, 102, 241' : '129, 140, 248';
 
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
