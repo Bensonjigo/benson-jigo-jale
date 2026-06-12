@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateThemeColor = (theme) => {
         const meta = document.querySelector('meta[name="theme-color"]');
         if (meta) {
-            meta.content = theme === 'light' ? '#f8fafc' : '#070b14';
+            meta.content = theme === 'light' ? '#f4f3f0' : '#070b14';
         }
     };
 
